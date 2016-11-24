@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="groundPane" prefHeight="600.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.javafxController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="模式">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#POP_MODE" text="手动输入" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="说明">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#POP_INSTRUCTION" text="使用方法" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="选项">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#POP_CODER" text="开发者" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <Pane prefHeight="562.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <BorderPane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <GridPane prefHeight="141.0" prefWidth="460.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="10.0" prefWidth="450.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="inputLabel" prefHeight="58.0" prefWidth="481.0" text=" " />
+                  <Label fx:id="outputLabel" prefHeight="82.0" prefWidth="502.0" text="0 " textAlignment="RIGHT" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </top>
+         <center>
+            <GridPane hgap="5.0" prefHeight="415.0" prefWidth="338.0" vgap="5.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="2.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="0.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="65.0" />
+
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="295.0" minHeight="0.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="295.0" minHeight="0.0" prefHeight="30" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="295.0" minHeight="0.0" prefHeight="30" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="295.0" minHeight="0.0" prefHeight="30" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="347.0" minHeight="0.0" prefHeight="30" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_SIN" prefHeight="30.0" prefWidth="70.0" text="SIN" GridPane.rowIndex="1" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_COS" prefHeight="30.0" prefWidth="65.0" text="COS" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_TAN" prefHeight="30.0" prefWidth="65.0" text="TAN" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_YROOT" prefHeight="30.0" prefWidth="65.0" text="开方" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_SQRT" prefHeight="30.0" prefWidth="65.0" text="平方根" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_CUBEROOT" prefHeight="30.0" prefWidth="65.0" text="立方根" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_ARCSIN" prefHeight="30.0" prefWidth="65.0" text="ARCS" GridPane.rowIndex="2" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_ARCCOS" prefHeight="30.0" prefWidth="65.0" text="ARCC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_ARCTAN" prefHeight="30.0" prefWidth="65.0" text="ARCT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_POW" prefHeight="30.0" prefWidth="65.0" text="^" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_FACT" prefHeight="30.0" prefWidth="65.0" text="!" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_SINH" prefHeight="30.0" prefWidth="65.0" text="SINH" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_LOG" prefHeight="30.0" prefWidth="65.0" text="LOG" GridPane.rowIndex="3" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_LN" prefHeight="30.0" prefWidth="65.0" text="LN" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_LOG10" prefHeight="30.0" prefWidth="65.0" text="LOG10" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_LBM" prefHeight="30.0" prefWidth="65.0" text="[" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_RBM" prefHeight="30.0" prefWidth="65.0" text="]" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_COSH" prefHeight="30.0" prefWidth="65.0" text="COSH" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_MOD" prefHeight="60.0" prefWidth="65.0" text="MOD" GridPane.rowIndex="4" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_AVERAGE" prefHeight="60.0" prefWidth="65.0" text="AVER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_SUM" prefHeight="60.0" prefWidth="65.0" text="SUM" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_LBRACKET" prefHeight="60.0" prefWidth="65.0" text="(" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_RBRACKET" prefHeight="60.0" prefWidth="65.0" text=")" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_TANH" prefHeight="60.0" prefWidth="65.0" text="TANH" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_EXP" prefHeight="60.0" prefWidth="65.0" text="e^x" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#PUT_MULTIPLY" prefHeight="60.0" prefWidth="65.0" text="X" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#PUT_SEVEN" prefHeight="60.0" prefWidth="65.0" text="7" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#PUT_EIGHT" prefHeight="60.0" prefWidth="65.0" text="8" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#PUT_NINE" prefHeight="60.0" prefWidth="65.0" text="9" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#CLEAR" prefHeight="60.0" prefWidth="65.0" text="C" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" prefHeight="60.0" prefWidth="65.0" text="未定" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#PUT_DIVIDE" prefHeight="60.0" prefWidth="65.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#PUT_FOUR" prefHeight="60.0" prefWidth="65.0" text="4" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#PUT_FIVE" prefHeight="60.0" prefWidth="65.0" text="5" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#PUT_SIX" prefHeight="60.0" prefWidth="65.0" text="6" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#GET_EQAUL" prefHeight="60.0" prefWidth="65.0" text="=" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_VAR" prefHeight="60.0" prefWidth="65.0" text="方差" GridPane.rowIndex="7" />
+                  <Button mnemonicParsing="false" onAction="#PUT_PLUS" prefHeight="60.0" prefWidth="65.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Button mnemonicParsing="false" onAction="#PUT_ONE" prefHeight="60.0" prefWidth="65.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Button mnemonicParsing="false" onAction="#PUT_TWO" prefHeight="60.0" prefWidth="65.0" text="2" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <Button mnemonicParsing="false" onAction="#PUT_THREE" prefHeight="60.0" prefWidth="65.0" text="3" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <Button mnemonicParsing="false" onAction="#STEP_BACK" prefHeight="60.0" prefWidth="65.0" text="&lt;-" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                  <Button fx:id="BTN_SIN" mnemonicParsing="false" onAction="#PUT_STDEVP" prefHeight="60.0" prefWidth="65.0" text="标准差" GridPane.rowIndex="8" />
+                  <Button mnemonicParsing="false" onAction="#PUT_MINUS" prefHeight="60.0" prefWidth="65.0" text="—" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Button mnemonicParsing="false" onAction="#PUT_ZERO" prefHeight="60.0" prefWidth="65.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Button mnemonicParsing="false" onAction="#PUT_DOT" prefHeight="60.0" prefWidth="65.0" text="." GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <Button mnemonicParsing="false" onAction="#PUT_DOUBLEZERO" prefHeight="60.0" prefWidth="65.0" text="00" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <Button mnemonicParsing="false" onAction="#PUT_DOU" prefHeight="60.0" prefWidth="65.0" text="," GridPane.columnIndex="5" GridPane.rowIndex="8" />                  
+                  
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+   <left>
+      <Pane prefHeight="562.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
