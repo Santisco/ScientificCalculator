@@ -392,10 +392,21 @@ public class javafxController {
 
     @FXML
     void POP_INSTRUCTION(ActionEvent event) {
-    	 Stage stage = new Stage();
-    	 stage.setTitle("用法说明");
-	     stage.setResizable(false);
-	     stage.show();
+        Stage stage = new Stage();
+        Label l = new Label("SIN,COS,TAN:三角函数\n"
+        		+ "ARCS,ARCC,ARCT:反三角函数\n"
+        		+ "^:乘方\n"
+        		+ "!:阶乘\n"
+        		+ "MOD:取模\n"
+        		+ "AVER:取平均\n"
+        		+ "SUM:求和\n"
+        		+ "SINH,COSH,TANH:双曲函数\n"
+        		+ "e^x:e为底的幂函数\n"
+        		+ "具备基础()的补全功能，对于有集合运算需要手动补全]");
+        //l.textAlignmentProperty();
+        Scene s = new Scene(l,300,200);
+        stage.setScene(s);
+        stage.show();
     }
 
     @FXML

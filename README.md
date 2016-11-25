@@ -13,7 +13,7 @@
 <body>
 <p><h2>基本的实现机理：</h2></p>
 <hr />
-<p><b><li>UI部分运用传统的MVC模式，由于Model部分数据较多，就将view与controller同时放在gui包中；算法部分实现模式勉强算是工厂模式，利用词法与语法分析功能实现对输入串的分析以及操作。<br><br><br></b></p>
+<p><b><li>UI部分运用传统的MVC模式，由于Model部分数据较多，就将view与controller同时放在gui包中，其中皮肤文件是在skin.css文件中；算法部分实现模式勉强算是工厂模式，利用词法与语法分析功能实现对输入串的分析以及操作。<br><br><br></b></p>
 </body>
 
 <body>
