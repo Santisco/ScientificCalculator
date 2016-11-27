@@ -401,10 +401,12 @@ public class javafxController {
         		+ "AVER:取平均\n"
         		+ "SUM:求和\n"
         		+ "SINH,COSH,TANH:双曲函数\n"
+        		+ "对于开方,LOG()都是二元操作数,形如LOG(a,b)\n"
         		+ "e^x:e为底的幂函数\n"
+        		+ "对于标准差,SUM,方差,形如SUM([a,b,c,]),中括号内不限个数\n"
         		+ "具备基础()的补全功能，对于有集合运算需要手动补全]");
         //l.textAlignmentProperty();
-        Scene s = new Scene(l,300,200);
+        Scene s = new Scene(l,350,200);
         stage.setScene(s);
         stage.show();
     }
