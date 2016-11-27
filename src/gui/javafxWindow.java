@@ -21,7 +21,7 @@ public class javafxWindow extends Application {
 	        this.primaryStage.setTitle("冠龙小学生计算器");
 	        this.primaryStage.setResizable(false);
 	      //  this.primaryStage.getIcons().add(new Image("file:///" +"C:\\Users\\lenovo\\workspace\\Calculator-master\\src\\gui\\icon.png".replace("\\", "/")));
-	        this.primaryStage.getIcons().add(new Image("/gui/icon.png"));
+	       // this.primaryStage.getIcons().add(new Image("/gui/icon.png"));
 	        initRootLayout();
 
 
